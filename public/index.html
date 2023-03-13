@@ -27,7 +27,36 @@
     <title>L💡te Lessons</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header className="App-header">
+        <h1>L💡te Lessons</h1>>
+          
+        <a
+          className="App-link"
+          href="https://www.instagram.com/lite_rails/?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @Lite_Rails
+        </a>
+      </header>
+        <form action="" onSubmit={this.handleSubmit}>
+					<legend>Do you prefer light or dark?</legend>
+					<label for="pie">pie</label>
+					<input type="radio" id="pie" value="pie" name="size" />
+			
+					<label for="slice">slice</label>
+					<input type="radio" id="slice" value="slice" name="size" />
+
+				<fieldset class="choices">
+					<legend>Do you prefer Hot <span class="crystal">🥵</span> or Freezing <span class="crystal">🥶</span>?</legend>
+					<label for="$">a little</label>
+					<input type="radio" name="price" id="$" value="$" />
+			
+					<label for="$$">a little more</label>
+					<input type="radio" name="price" id="$$" value="$$"/>
+				</fieldset>
+				<input type="submit" value="En-L💡ghten Yourself!!"/> 
+			</form>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +68,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="./app.js"></script>
   </body>
 </html>
