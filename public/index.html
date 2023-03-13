@@ -28,7 +28,7 @@
   </head>
   <body>
     <header className="App-header">
-        <h1>L💡te Lessons</h1>>
+        <!-- <h1>L💡te Lessons</h1>>
           
         <a
           className="App-link"
@@ -37,37 +37,61 @@
           rel="noopener noreferrer"
         >
           @Lite_Rails
-        </a>
-      </header>
-        <form action="" onSubmit={this.handleSubmit}>
-					<legend>Do you prefer light or dark?</legend>
-					<label for="pie">pie</label>
-					<input type="radio" id="pie" value="pie" name="size" />
-			
-					<label for="slice">slice</label>
-					<input type="radio" id="slice" value="slice" name="size" />
+        </a> -->
+        <div class="wrapper">
+		<header>
+			<h1>L<span class="crystal">💡</span>te Lessons</h1>
+		</header>
 
+		<main>
+			<form action="">
+				<fieldset class="choices">
+					<legend>Do you prefer Indoor <span class="crystal"> 🏪</span> or Outdoor <span class="crystal">🏞️</span>?</legend>
+					<label for="pie">Indoor</label>
+					<input type="radio" id="pie" value="pie" name="size">
+			
+					<label for="slice">Outdoor</label>
+					<input type="radio" id="slice" value="slice" name="size">
+				</fieldset>
+			
 				<fieldset class="choices">
 					<legend>Do you prefer Hot <span class="crystal">🥵</span> or Freezing <span class="crystal">🥶</span>?</legend>
-					<label for="$">a little</label>
-					<input type="radio" name="price" id="$" value="$" />
+					<label for="$">Hot</label>
+					<input type="radio" name="price" id="$" value="$">
 			
-					<label for="$$">a little more</label>
-					<input type="radio" name="price" id="$$" value="$$"/>
+					<label for="$$">Freezing</label>
+					<input type="radio" name="price" id="$$" value="$$">
 				</fieldset>
-				<input type="submit" value="En-L💡ghten Yourself!!"/> 
+			
+				<input type="submit" value="En - l💡ghten Yourself!!">
 			</form>
+
+			<section class="results"></section>
+		</main>
+		<footer class="wrapper">
+			<div class="wrapper footer">
+        <div class="copyright wrapper">
+          <p>Owner/Rider :  
+            <a href="https://www.instagram.com/craigers93/" target="blank""> Craig Monteith </a> | 
+            <a href="https://www.instagram.com/lite_rails/" target="blank"">@lite_rails</a>
+          </p>
+          <p>Developed with
+            <a 
+            href="https://app.netlify.com/teams/felicianemet/overview" target="blank"">
+              <span>❤</span>
+          </a>By: <a 
+          href="https://felicianemet.com/" 
+          target="blank"">Felicia Nemet</a>
+          </p>
+        </div>       
+
+		</footer>
+	</div>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
     <script src="./app.js"></script>
   </body>
 </html>
